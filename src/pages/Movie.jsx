@@ -54,7 +54,7 @@ const Movie = () => {
             <div className='flex flex-row  justify-between items-center  w-screen overflow-x-hidden'>
                 <div className='flex flex-row md:gap-2.5 gap-0.5 w-3/4'>
                     <input type="text" placeholder='Search Movies' className='md:w-xl w-[75%] md:h-15 h-9 md:mx-4 mx-1 my-4 border-4 border-[#5637c5] rounded-2xl' onInput={inp} />
-                    <Link to={'/search/' + sc}><button className='md:h-15 md:w-30 h-9 w-[20px] border-3 border-[#5637c5] bg-[#2c2056] my-4 rounded-xl mx-1.5' disabled={sc.length > 1 ? false : true}>SEARCH</button></Link></div>
+                    <Link to={'/search/' + sc}><button className='md:h-15 md:w-30 h-9 w-[75px] border-3 border-[#5637c5] bg-[#2c2056] my-4 rounded-xl mx-1.5' disabled={sc.length > 1 ? false : true}>SEARCH</button></Link></div>
                 <span className='w-1/3 flex flex-row-reverse'>
                     <select name="genres" onChange={loadCat} className='w-full md:w-40 md-p-10 md:h-14 h-10 border-2 border-[#5637c5] m-6 focus:outline-none focus:ring-none text-[#B000F0] focus:ring-[#2c2056]'>
                         <option value="">Select Genre</option>
