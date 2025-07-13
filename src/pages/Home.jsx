@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState, useEffect, useRef } from 'react'
-import axios from 'axios'
 import { Link } from 'react-router'
 import Navbar from './Navbar'
 import bgimg from '../assets/background.jpg'
