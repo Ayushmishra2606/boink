@@ -59,7 +59,7 @@ const Tv = () => {
             <div className='flex flex-row justify-between items-center w-screen overflow-x-hidden'>
                 <div className='flex flex-row md:gap-2.5 gap-0.5 w-3/4'>
                     <input type="text" placeholder='Search Tv show' className='md:w-xl w-[75%] md:h-15 h-9 md:mx-4 mx-1 my-4 border-4 border-[#5637c5] rounded-2xl' onInput={inp} />
-                    <Link to={'/search/' + sc}><button className='md:h-15 md:w-30 h-9 w-[20] border-3 border-[#5637c5] bg-[#2c2056] my-4 rounded-xl mx-1.5' disabled={dabled}>SEARCH</button></Link></div>
+                    <Link to={'/search/' + sc}><button className='md:h-15 md:w-30 h-9 w-[20px] border-3 border-[#5637c5] bg-[#2c2056] my-4 rounded-xl mx-1.5' disabled={dabled}>SEARCH</button></Link></div>
                     <span>
                         <select name="genres" id="genre-select" onChange={loadCat} className='w-28 md:w-40 md-p-10 md:h-14 h-10 border-2 border-[#5637c5] m-6 focus:outline-none focus:ring-none text-[#B000F0] focus:ring-[#2c2056]'>
                         <option value="" > Select Genre</option>
