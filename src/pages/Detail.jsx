@@ -44,7 +44,7 @@ const Detail = () => {
                         <div className='text-white flex flex-col  gap-3 md:gap-7 mx-7'>
                             <h1 className='md:text-8xl text-[50px]'>{mydata.name || mydata.title}</h1>
                             <h3 className='md:text-6xl text-[30px]'>{mydata.tagline}</h3>
-                            <p className='md:text-2xl text-[15px]'>{mydata.overview}</p>
+                            <p className='md:text-2xl text-[15px] max-h-[25vh] overflow:hidden md:line-clamp-5 '>{mydata.overview}</p>
                             <div className='flex md:flex-row flex-col gap-3 text-[11px] md:text-[13px] font-medium'>
                                 <p>Language :&nbsp;{mydata?.spoken_languages?.[0]?.english_name}</p>
                                 <p>Released On :&nbsp;{mydata.first_air_date || mydata.release_date}</p>{param.cat=='tv'?<p>Seasons :&nbsp;{mydata?.number_of_seasons}</p>:""}

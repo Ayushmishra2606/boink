@@ -58,7 +58,7 @@ const CatSc = () => {
                     ) : (
                         sr.map((ele) => (
                             <div key={ele.id || ele.credit_id}>
-                                <Link to={'/' + params.type + '/' + params.type + '/details/' + ele.id + '/' + ele.name || ele.title}>
+                                <Link to={'/' + params.type + '/' + params.type + '/details/' + ele.id + '/' + (ele.name || ele.title)}>
                                     <div className="h-64 w-36">
                                         <img
                                             src={`https://image.tmdb.org/t/p/w500${ele.poster_path}`}
